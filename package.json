@@ -1,0 +1,32 @@
+{
+  "name": "create-easy-icons",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "bin": {
+    "create-easy-icons": "./bin/create-easy-icons.js"
+  },
+  "scripts": {
+    "start": "yarn father-build --watch",
+    "build": "yarn father-build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "devDependencies": {
+    "father-build": "^1.19.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "del": "^6.0.0",
+    "download-git-repo": "^3.0.2",
+    "fs-extra": "^9.1.0",
+    "minimist": "^1.2.5"
+  }
+}
