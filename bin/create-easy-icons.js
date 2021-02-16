@@ -86,10 +86,11 @@ function initTemplate({ projectDirectory, framework }) {
       return;
     }
     fsExtra.copySync(resolve(TMP_DIR, framework), resolve(projectDirectory));
+    const projectName = path.parse(projectDirectory).name;
     updatePackage(resolve(projectDirectory), {
-      name: path.parse(projectDirectory).name,
+      name: projectName,
     });
     del(TMP_DIR);
-    console.log(`${chalk.greenBright("Success")} initialize project success.`);
+    console.log(`${chalk.greenBright("Success")} Initialize project ${chalk.blueBright(projectName)} success.`);
   });
 }
