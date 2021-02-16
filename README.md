@@ -6,7 +6,7 @@
 ## Usage
 
 ```bash
-npx create easy-icons ./my-icons
+yarn create easy-icons ./my-icons
 ```
 
 安装依赖并打包发布到 `npm` 上
